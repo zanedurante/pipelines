@@ -26,7 +26,7 @@ In order to run this pipeline, you need to first build the docker base image and
 
 `git clone https://github.com/kubeflow/pipelines.git`
 
-`cd pipelines/samples/notebooks/image-captioning-gcp/src`
+`cd pipelines/samples/contrib/image-captioning-gcp/src`
 
 `docker build -t img-cap .` 
 
