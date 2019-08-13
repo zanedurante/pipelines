@@ -24,15 +24,13 @@ In order to run this pipeline, make sure to upload the notebook to your notebook
 ### Create base image
 In order to run this pipeline, you need to first build the docker base image and upload it to a container registry.  This can be done locally with the following commands:
 
-`git clone https://github.com/kubeflow/pipelines.git`
-
-`cd pipelines/samples/notebooks/image-captioning-gcp/src`
-
-`docker build -t img-cap .` 
-
-`docker tag img-cap gcr.io/[PROJECT-ID]/img-cap:latest`
-
-`docker push gcr.io/[PROJECT ID]/img-cap:latest`
+```
+git clone https://github.com/kubeflow/pipelines.git
+cd pipelines/samples/contrib/image-captioning-gcp/src
+docker build -t img-cap .
+docker tag img-cap gcr.io/[PROJECT-ID]/img-cap:latest
+docker push gcr.io/[PROJECT ID]/img-cap:latest
+```
 
 ### Download dataset
 To download the dataset, run the first few cells in the notebook.
